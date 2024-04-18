@@ -1,0 +1,4 @@
+def stopGninnips(sentence):
+    return ' '.join([i if len(i) < 5 else i[::-1] for i in sentence.split()])
+
+print(stopGninnips('This is another test'))
